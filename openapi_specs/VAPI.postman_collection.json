@@ -1,8 +1,8 @@
 {
 	"info": {
 		"_postman_id": "2b4774dd-b3fb-4a63-81f4-353643bbb641",
-		"name": "VAmPI",
-		"description": "OpenAPI v3 specs for VAmPI",
+		"name": "VAPI",
+		"description": "OpenAPI v3 specs for VAPI",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "10538030"
 	},
@@ -44,7 +44,7 @@
 			"response": []
 		},
 		{
-			"name": "VAmPI home",
+			"name": "VAPI home",
 			"event": [
 				{
 					"listen": "test",
@@ -75,7 +75,7 @@
 						""
 					]
 				},
-				"description": "VAmPI is a vulnerable on purpose API. It was created in order to evaluate the efficiency of third party tools in identifying vulnerabilities in APIs but it can also be used in learning/teaching purposes."
+				"description": "VAPI is a vulnerable on purpose API. It was created in order to evaluate the efficiency of third party tools in identifying vulnerabilities in APIs but it can also be used in learning/teaching purposes."
 			},
 			"response": []
 		},
@@ -368,7 +368,7 @@
 			]
 		},
 		{
-			"name": "Login to VAmPI",
+			"name": "Login to VAPI",
 			"event": [
 				{
 					"listen": "test",
@@ -420,11 +420,11 @@
 						"login"
 					]
 				},
-				"description": "Login to VAmPI"
+				"description": "Login to VAPI"
 			},
 			"response": [
 				{
-					"name": "Login to VAmPI (wrong pass exploit)",
+					"name": "Login to VAPI (wrong pass exploit)",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
@@ -466,7 +466,7 @@
 					"body": "{\n    \"status\": \"fail\",\n    \"message\": \"Password is not correct for the given username.\"\n}"
 				},
 				{
-					"name": "Login to VAmPI (wrong user exploit)",
+					"name": "Login to VAPI (wrong user exploit)",
 					"originalRequest": {
 						"method": "POST",
 						"header": [
