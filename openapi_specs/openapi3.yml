@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: VAmPI
-  description: OpenAPI v3 specs for VAmPI
+  description: OpenAPI v3 specs for Vulnerable API
   version: '0.1'
 servers:
   - url: http://localhost:5000
@@ -37,10 +37,9 @@ paths:
         - home
       summary: VAmPI home
       description: >-
-        VAmPI is a vulnerable on purpose API. It was created in order to
-        evaluate the efficiency of third party tools in identifying
-        vulnerabilities in APIs but it can also be used in learning/teaching
-        purposes.
+        This is a vulnerable on purpose API. It was created
+        for learning/teaching
+        purposes. You are free to abuse and hack this API.
       operationId: api_views.main.basic
       responses:
         '200':
@@ -55,7 +54,7 @@ paths:
                     example: 'VAmPI the Vulnerable API'
                   help:
                     type: string
-                    example: 'VAmPI is a vulnerable on purpose API. It was created in order to evaluate the efficiency of third party tools in identifying vulnerabilities in APIs but it can also be used in learning/teaching purposes.'
+                    example: 'This is a vulnerable on purpose API. Created for learning/teaching purposes.'
                   vulnerable:
                     type: number
                     example: 1
