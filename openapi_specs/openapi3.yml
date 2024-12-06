@@ -39,7 +39,7 @@ paths:
     get:
       tags:
         - home
-      summary: VAmPI home
+      summary: VAPI home
       description: >-
         This is a vulnerable on purpose API. It was created
         for learning/teaching
@@ -55,7 +55,7 @@ paths:
                 properties:
                   message:
                     type: string
-                    example: 'VAmPI the Vulnerable API'
+                    example: 'VAPI the Vulnerable API'
                   help:
                     type: string
                     example: 'This is a vulnerable on purpose API. Created for learning/teaching purposes.'
@@ -166,8 +166,8 @@ paths:
     post:
       tags:
         - users
-      summary: Login to VAmPI
-      description: Login to VAmPI
+      summary: Login to VAPI
+      description: Login to VAPI
       operationId: api_views.users.login_user
       requestBody:
         description: Username of the user
