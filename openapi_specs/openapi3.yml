@@ -1,7 +1,11 @@
 openapi: 3.0.1
 info:
-  title: VAmPI
-  description: OpenAPI v3 specs for Vulnerable API
+  title: VAPI
+  description: >-
+    OpenAPI v3 specs for Vulnerable API
+    This API is vulnerable on purpose. 
+    Specially hosted for the legendary backend devs of Schiphol CP.
+    
   version: '0.1'
 servers:
   - url: http://localhost:5000
