@@ -17,24 +17,6 @@ components:
       bearerFormat: JWT
       x-bearerInfoFunc: models.user_model.User.decode_auth_token
 paths:
-  /createdb:
-    get:
-      tags:
-        - db-init
-      summary: Creates and populates the database with dummy data
-      description: Creates and populates the database with dummy data
-      operationId: api_views.main.populate_db
-      responses:
-        '200':
-          description: Creates and populates the database with dummy data
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  message:
-                    type: string
-                    example: 'Database populated.'
   /:
     get:
       tags:
