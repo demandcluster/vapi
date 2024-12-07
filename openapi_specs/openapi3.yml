@@ -19,12 +19,10 @@ components:
 paths:
   /createdb:
     get:
-      x-showOnlyTo:
-        - bearerAuth
       tags:
-        - db-init
+        - reset-challenge
       summary: Creates and populates the database with dummy data
-      description: Creates and populates the database with dummy data
+      description: Creates and populates the database with dummy data. This will reset the database for all, so please do not use during workshop.
       operationId: api_views.main.populate_db
       responses:
         '200':
