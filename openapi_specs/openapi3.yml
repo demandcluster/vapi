@@ -19,6 +19,8 @@ components:
 paths:
   /createdb:
     get:
+       x-showOnlyTo:
+        - bearerAuth
       tags:
         - db-init
       summary: Creates and populates the database with dummy data
