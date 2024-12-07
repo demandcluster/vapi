@@ -21,8 +21,6 @@ paths:
     get:
       x-showOnlyTo:
         - bearerAuth
-      security:
-        - bearerAuth: []
       tags:
         - db-init
       summary: Creates and populates the database with dummy data
