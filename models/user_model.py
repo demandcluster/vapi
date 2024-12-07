@@ -85,7 +85,7 @@ class User(db.Model):
     def register_user(username, password, email, admin=False):
         new_user = User(username=username, password=password, email=email, admin=admin)
         randomint = str(randrange(100))
-        secret = int(os.getenv('BOOK_SECRET', 'secret'))
+        secret = str(os.getenv('BOOK_SECRET', 'secret'))
         if username=="ron":
             new_user.books = [Book(book_title="API Security for Dummies", secret_content=secret)]
         else:
@@ -104,5 +104,5 @@ class User(db.Model):
         User.register_user("name1", "pass1", "mail1@mail.com", False)
         User.register_user("name2", "pass2", "mail2@mail.com", False)
         User.register_user("admin", "adminpass1", "admin@mail.com", True)
-        User.register_user("ron", "secretpassword", "ron@mail.com", False)
+        User.register_user("ron", str(os.getenv('PASSWORD', 'ronpassword')), "ron@mail.com", False)
         
