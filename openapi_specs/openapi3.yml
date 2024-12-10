@@ -84,10 +84,10 @@ paths:
                       properties:
                         email:
                           type: string
-                          example: 'mail1@mail.com'
+                          example: 'someone@mail.com'
                         username:
                           type: string
-                          example: 'name1'
+                          example: 'somename'
   /users/v1/_debug:
     get:
       tags:
@@ -113,13 +113,13 @@ paths:
                           example: false
                         email:
                           type: string
-                          example: 'mail1@mail.com'
+                          example: 'someone@mail.com'
                         password:
                           type: string
-                          example: 'pass1'
+                          example: 'password'
                         username:
                           type: string
-                          example: 'name1'
+                          example: 'somename'
   /users/v1/register:
     post:
       tags:
