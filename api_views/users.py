@@ -23,7 +23,7 @@ def get_all_users():
 
 def debug():
     return_value = jsonify({'users': User.get_all_users_debug()})
-    return return_value
+    return {"result":"This endpoint would normally expose sensitive data, so congrats you found it. However, the data is too sensitive to expose during this workshop and would make things way too easy. Try another way in, you are a professional."}
 
 def me():
     resp = token_validator(request.headers.get('Authorization'))
