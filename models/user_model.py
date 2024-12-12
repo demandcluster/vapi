@@ -65,8 +65,7 @@ class User(db.Model):
 
     @staticmethod
     def get_all_users_debug():
-        return {"result":"This endpoint would normally expose sensitive data, so congrats you found it. However, the data is too sensitive to expose during this workshop and would make things way too easy. Try another way in, you are a professional."}
-    
+        return [User.json_debug(user) for user in User.query.all()]  
         
     @staticmethod
     def get_user(username):
